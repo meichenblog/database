@@ -1,6 +1,7 @@
 #!/bin/bash
 # cloudbeaver web数据库工具
 https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container
+https://github.com/dbeaver/cloudbeaver
 
 sudo docker pull dbeaver/cloudbeaver:latest
 
