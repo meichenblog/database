@@ -11,3 +11,5 @@ sudo docker run --name cloudbeaver --rm -ti -p 8080:8978 -v /var/cloudbeaver/wor
 # 一款SQL检查审核工具(MySql)
 
 wget https://github.com/cookieY/Yearning/releases/download/v2.3.3/Yearning-2.3.3.2-linux-amd64.zip
+
+[dbeaver 数据库工具：](https://dbeaver.io/download/)
