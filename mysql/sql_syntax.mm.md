@@ -35,7 +35,7 @@ mysql> use mysql;
 mysql> update user set host='%' where user='root';
 
 # 刷新更新后的数据库
-mysql> lush privileges;
+mysql> flush privileges;
 ```
 
 # mysql备份遇到的问题
