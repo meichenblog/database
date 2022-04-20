@@ -35,3 +35,19 @@ mysql> update user set host='%' where user='root';
 # 刷新更新后的数据库
 mysql> lush privileges;
 ```
+
+# mysql备份遇到的问题
+[作者原文档](https://www.ltsplus.com/mysql/fix-mysqldump-got-error-1044-access-denied-for-user-rootlocalhost-to-database-information_schema-when-using-lock-tables)
+```sql
+报错信息：mysqldump Access denied …… ‘information_schema’ when using LOCK TABLES
+# 解决方法一：
+# 加入 --single-transaction 参数, 只要在执行mysqldump 时加入  --single-transaction 参数，便不会出现错误
+# 示例如下：mysqldump --single-transcation -u root -p db_name > mysql-bakup.sql
+# 解决方法二：
+# 先登陆mysql数据库中
+mysql -u root -p
+# 输入一下指令
+mysql> GRANT SELECT,LOCK TABLES ON db_name.* TO 'username'@'localhost';
+# 刷新mysql数据库
+mysql> flush privileges;
+```
