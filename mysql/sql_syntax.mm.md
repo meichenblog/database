@@ -53,3 +53,4 @@ mysql> GRANT SELECT,LOCK TABLES ON db_name.* TO 'username'@'localhost';
 # 刷新mysql数据库
 mysql> flush privileges;
 ```
+[Python 连接 mysql](https://www.w3schools.com/python/python_mysql_create_db.asp)
