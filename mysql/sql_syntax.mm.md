@@ -1,5 +1,7 @@
 # mysql 常用语句
 
+[在线mysql练习与查询网站](https://www.liaoxuefeng.com/wiki/1177760294764384/1179611432985088)
+
 ## 登陆mysql方法
 ```sql
 # 用法
